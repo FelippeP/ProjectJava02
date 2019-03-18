@@ -1,7 +1,7 @@
 <%-- 
     Document   : amortizacao-americana
-    Created on : 16/03/2019, 12:22:43
-    Author     : Manoel Rodriguez
+    Created on : 17/03/2019, 18:12:13
+    Author     : Felippe Papai
 --%>
 
 <%@page import="java.text.DecimalFormat"%>
