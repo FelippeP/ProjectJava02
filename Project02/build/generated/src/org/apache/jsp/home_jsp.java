@@ -1,0 +1,303 @@
+package org.apache.jsp;
+
+import javax.servlet.*;
+import javax.servlet.http.*;
+import javax.servlet.jsp.*;
+
+public final class home_jsp extends org.apache.jasper.runtime.HttpJspBase
+    implements org.apache.jasper.runtime.JspSourceDependent {
+
+  private static final JspFactory _jspxFactory = JspFactory.getDefaultFactory();
+
+  private static java.util.List<String> _jspx_dependants;
+
+  static {
+    _jspx_dependants = new java.util.ArrayList<String>(1);
+    _jspx_dependants.add("/WEB-INF/jspf/menu.jspf");
+  }
+
+  private org.glassfish.jsp.api.ResourceInjector _jspx_resourceInjector;
+
+  public java.util.List<String> getDependants() {
+    return _jspx_dependants;
+  }
+
+  public void _jspService(HttpServletRequest request, HttpServletResponse response)
+        throws java.io.IOException, ServletException {
+
+    PageContext pageContext = null;
+    HttpSession session = null;
+    ServletContext application = null;
+    ServletConfig config = null;
+    JspWriter out = null;
+    Object page = this;
+    JspWriter _jspx_out = null;
+    PageContext _jspx_page_context = null;
+
+    try {
+      response.setContentType("text/html;charset=UTF-8");
+      pageContext = _jspxFactory.getPageContext(this, request, response,
+      			null, true, 8192, true);
+      _jspx_page_context = pageContext;
+      application = pageContext.getServletContext();
+      config = pageContext.getServletConfig();
+      session = pageContext.getSession();
+      out = pageContext.getOut();
+      _jspx_out = out;
+      _jspx_resourceInjector = (org.glassfish.jsp.api.ResourceInjector) application.getAttribute("com.sun.appserv.jsp.resource.injector");
+
+      out.write("\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("<!Doctype html>\n");
+      out.write("<html lang=\"pt-br\">\n");
+      out.write("\n");
+      out.write("    <head>\n");
+      out.write("        <meta charset=\"UTF-8\">\n");
+      out.write("        <title>Home</title>\n");
+      out.write("        <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n");
+      out.write("\n");
+      out.write("        <link rel=\"stylesheet\" href=\"https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css\" integrity=\"sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO\"\n");
+      out.write("              crossorigin=\"anonymous\">\n");
+      out.write("\n");
+      out.write("        <style>\n");
+      out.write("\n");
+      out.write("            div#sac {\n");
+      out.write("                position: absolute;\n");
+      out.write("                left: 100px;\n");
+      out.write("                top: 200px;\n");
+      out.write("                width: 350px;\n");
+      out.write("                height: 500px;\n");
+      out.write("                border: solid 0px;\n");
+      out.write("                border-radius: 50px;\n");
+      out.write("                background-color: white;\n");
+      out.write("                padding: 15px;\n");
+      out.write("                box-shadow: 1px 1px 15px black;\n");
+      out.write("\n");
+      out.write("            }\n");
+      out.write("\n");
+      out.write("            div#americana {\n");
+      out.write("                position: absolute;\n");
+      out.write("                left: 450px;\n");
+      out.write("                top: 200px;\n");
+      out.write("                width: 350px;\n");
+      out.write("                height: 500px;\n");
+      out.write("                border: solid 0px;\n");
+      out.write("                border-radius: 50px;\n");
+      out.write("                background-color: white;\n");
+      out.write("                padding: 15px;\n");
+      out.write("                margin-left: 50px;\n");
+      out.write("                box-shadow: 1px 1px 15px black;\n");
+      out.write("            }\n");
+      out.write("            div#price{\n");
+      out.write("                position: absolute;\n");
+      out.write("                left: 850px;\n");
+      out.write("                top: 200px;\n");
+      out.write("                width: 350px;\n");
+      out.write("                height: 500px;\n");
+      out.write("                border: solid 0px;\n");
+      out.write("                border-radius: 50px;\n");
+      out.write("                background-color: white;\n");
+      out.write("                padding: 15px;\n");
+      out.write("                margin-left: 50px;\n");
+      out.write("                box-shadow: 1px 1px 15px black;\n");
+      out.write("            }\n");
+      out.write("            div#sac:hover{\n");
+      out.write("                background-color: rgb(219, 219, 219);\n");
+      out.write("            }\n");
+      out.write("            div#americana:hover{\n");
+      out.write("                background-color: rgb(219, 219, 219);\n");
+      out.write("            }\n");
+      out.write("            div#price:hover{\n");
+      out.write("                background-color: rgb(219, 219, 219);\n");
+      out.write("            }\n");
+      out.write("\n");
+      out.write("            p#tit-sac {\n");
+      out.write("                position: absolute;\n");
+      out.write("                left: 80px;\n");
+      out.write("                font-size: 18px;\n");
+      out.write("            }\n");
+      out.write("\n");
+      out.write("            p#tit-americana {\n");
+      out.write("                position: absolute;\n");
+      out.write("                left: 80px;\n");
+      out.write("                font-size: 18px;\n");
+      out.write("            }\n");
+      out.write("\n");
+      out.write("            p#tit-price{\n");
+      out.write("                position: absolute;\n");
+      out.write("                left: 150px;\n");
+      out.write("                font-size: 20px;\n");
+      out.write("            }\n");
+      out.write("\n");
+      out.write("            p#cont-sac {\n");
+      out.write("                position: absolute;\n");
+      out.write("                top: 60px;\n");
+      out.write("                left: 5px;\n");
+      out.write("                font-size: 15px;\n");
+      out.write("                text-align: justify;\n");
+      out.write("                text-indent: 0px;\n");
+      out.write("                padding: 20px;\n");
+      out.write("            }\n");
+      out.write("\n");
+      out.write("            p#cont-americana {\n");
+      out.write("                position: absolute;\n");
+      out.write("                top: 60px;\n");
+      out.write("                text-align: justify;\n");
+      out.write("                left: 5px;\n");
+      out.write("                font-size: 15px;\n");
+      out.write("                padding: 20px;\n");
+      out.write("            }\n");
+      out.write("\n");
+      out.write("            p#cont-price {\n");
+      out.write("                position: absolute;\n");
+      out.write("                top: 60px;\n");
+      out.write("                text-align: justify;\n");
+      out.write("                left: 5px;\n");
+      out.write("                font-size: 15px;\n");
+      out.write("                padding: 20px;\n");
+      out.write("            }\n");
+      out.write("            #botao-sac{\n");
+      out.write("                position: absolute;\n");
+      out.write("                top: 350px;\n");
+      out.write("                left: 80px;\n");
+      out.write("            }\n");
+      out.write("            #botao-americana{\n");
+      out.write("                position: absolute;\n");
+      out.write("                top: 350px;\n");
+      out.write("                left: 80px;\n");
+      out.write("            }\n");
+      out.write("            #botao-price{\n");
+      out.write("                position: absolute;\n");
+      out.write("                top: 350px;\n");
+      out.write("                left: 140px;\n");
+      out.write("            }\n");
+      out.write("\n");
+      out.write("        </style>\n");
+      out.write("\n");
+      out.write("    </head>\n");
+      out.write("\n");
+      out.write("    <body>\n");
+      out.write("\n");
+      out.write("        ");
+      out.write("\n");
+      out.write("\n");
+      out.write("<!Doctype html>\n");
+      out.write("<html lang=\"pt-br\">\n");
+      out.write("\n");
+      out.write("    <head>\n");
+      out.write("        <meta charset=\"UTF-8\">\n");
+      out.write("        <title>Amortização</title>\n");
+      out.write("        <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n");
+      out.write("\n");
+      out.write("        <link rel=\"stylesheet\" href=\"https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css\" integrity=\"sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO\"\n");
+      out.write("              crossorigin=\"anonymous\">\n");
+      out.write("\n");
+      out.write("        <style>\n");
+      out.write("            div#menu {\n");
+      out.write("                position: absolute;\n");
+      out.write("                top: 70px;\n");
+      out.write("                left: 420px;\n");
+      out.write("                padding: 15px;\n");
+      out.write("            }\n");
+      out.write("            div#fundo-menu{\n");
+      out.write("                width: 1100px;\n");
+      out.write("                height: 100px;\n");
+      out.write("                background-color: rgb(219, 219, 219);\n");
+      out.write("                position: absolute;\n");
+      out.write("                top: 50px;\n");
+      out.write("                left: 130px;\n");
+      out.write("                border: solid 0px;\n");
+      out.write("                border-radius: 50px;\n");
+      out.write("                box-shadow: 1px 1px 15px black;\n");
+      out.write("            }\n");
+      out.write("\n");
+      out.write("        </style>\n");
+      out.write("\n");
+      out.write("    </head>\n");
+      out.write("\n");
+      out.write("    <body>\n");
+      out.write("\n");
+      out.write("        <div id=\"fundo-menu\">\n");
+      out.write("\n");
+      out.write("        </div>\n");
+      out.write("        <div id=\"menu\">\n");
+      out.write("            <input type=\"submit\" value=\"Home\" name=\"menu-home\" class=\"btn btn-primary\" onclick=\"location.href = 'home.jsp'\">\n");
+      out.write("            <input type=\"submit\" value=\"Amortização Constante\" name=\"menu-sac\" class=\"btn btn-primary\" onclick=\"location.href = 'amortizacao-constante.jsp'\">\n");
+      out.write("            <input type=\"submit\" value=\"Amortização Americana\" name=\"menu-americana\" class=\"btn btn-primary\" onclick=\"location.href = 'amortizacao-americana.jsp'\">\n");
+      out.write("            <input type=\"submit\" value=\"Price\" name=\"menu-price\" class=\"btn btn-primary\" onclick=\"location.href = 'tabela-price.jsp'\">\n");
+      out.write("\n");
+      out.write("        </div>\n");
+      out.write("\n");
+      out.write("        <footer>\n");
+      out.write("            <!-- JavaScript (Opcional) -->\n");
+      out.write("            <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->\n");
+      out.write("            <script src=\"https://code.jquery.com/jquery-3.3.1.slim.min.js\" integrity=\"sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo\"\n");
+      out.write("            crossorigin=\"anonymous\"></script>\n");
+      out.write("            <script src=\"https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js\" integrity=\"sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49\"\n");
+      out.write("            crossorigin=\"anonymous\"></script>\n");
+      out.write("            <script src=\"https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js\" integrity=\"sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy\"\n");
+      out.write("            crossorigin=\"anonymous\"></script>\n");
+      out.write("        </footer>\n");
+      out.write("\n");
+      out.write("    </body>\n");
+      out.write("\n");
+      out.write("</html>\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("        <div id=\"sac\">\n");
+      out.write("            <p id=\"tit-sac\"><b>Amortização Constante</b></p>\n");
+      out.write("            <p id=\"cont-sac\">O Sistema de Amortização Constante ficou bastante conhecido no Brasil por ser utilizado\n");
+      out.write("                no SFH (Sistema Financeiro de Habitação). Sabe aquele financiamento, de um imóvel por exemplo, que a\n");
+      out.write("                parcela vai reduzindo com o passar dos anos? Pois então, a definição das parcelas neste tipo de\n");
+      out.write("                financiamento é baseada na tabela SAC. Entenda no decorrer deste artigo o que é tabela SAC e como funcionam\n");
+      out.write("                os cálculos neste sistema.</p>\n");
+      out.write("            <input id=\"botao-sac\" type=\"submit\" value=\"Amortização Constante\" class=\"btn btn-primary\" onclick=\"location.href = 'amortizacao-constante.jsp'\">\n");
+      out.write("        </div>\n");
+      out.write("\n");
+      out.write("        <div id=\"americana\">\n");
+      out.write("            <p id=\"tit-americana\"><b>Amortização Americana</b></p>\n");
+      out.write("            <p id=\"cont-americana\">O Sistema Americano de Amortização é um tipo de quitação de empréstimo que favorece\n");
+      out.write("                aqueles\n");
+      out.write("                que desejam pagar o valor principal através de uma única parcela, porém os juros devem ser pagos\n");
+      out.write("                periodicamente ou, dependendo do contrato firmado entre as partes, os juros são capitalizados e pagos junto\n");
+      out.write("                ao valor principal.</p>\n");
+      out.write("            <input id=\"botao-americana\" type=\"submit\" value=\"Amortização Americana\" class=\"btn btn-primary\" onclick=\"location.href = 'amortizacao-americana.jsp'\">\n");
+      out.write("        </div>\n");
+      out.write("\n");
+      out.write("        <div id=\"price\">\n");
+      out.write("            <p id=\"tit-price\"><b>Price</b></p>\n");
+      out.write("            <p id=\"cont-price\">A tabela Price é, essencialmente, um sistema de amortização — que consiste na forma\n");
+      out.write("                com que uma pessoa quita a dívida obtida de um empréstimo tomado de alguma instituição financeira.\n");
+      out.write("                Ao contratar uma linha de crédito, o cliente e a empresa estabelecem, por contrato, a maneira com\n");
+      out.write("                que a dívida total — amortização, juros e seguros — será quitada.</p>\n");
+      out.write("            <input id=\"botao-price\" type=\"submit\" value=\"Price\" class=\"btn btn-primary\" onclick=\"location.href = 'tabela-price.jsp'\">\n");
+      out.write("        </div>\n");
+      out.write("\n");
+      out.write("        <footer>\n");
+      out.write("            <!-- JavaScript (Opcional) -->\n");
+      out.write("            <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->\n");
+      out.write("            <script src=\"https://code.jquery.com/jquery-3.3.1.slim.min.js\" integrity=\"sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo\"\n");
+      out.write("            crossorigin=\"anonymous\"></script>\n");
+      out.write("            <script src=\"https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js\" integrity=\"sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49\"\n");
+      out.write("            crossorigin=\"anonymous\"></script>\n");
+      out.write("            <script src=\"https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js\" integrity=\"sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy\"\n");
+      out.write("            crossorigin=\"anonymous\"></script>\n");
+      out.write("        </footer>\n");
+      out.write("\n");
+      out.write("    </body>\n");
+      out.write("\n");
+      out.write("</html>\n");
+    } catch (Throwable t) {
+      if (!(t instanceof SkipPageException)){
+        out = _jspx_out;
+        if (out != null && out.getBufferSize() != 0)
+          out.clearBuffer();
+        if (_jspx_page_context != null) _jspx_page_context.handlePageException(t);
+        else throw new ServletException(t);
+      }
+    } finally {
+      _jspxFactory.releasePageContext(_jspx_page_context);
+    }
+  }
+}
